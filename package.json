@@ -9,6 +9,7 @@
     "install-all": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
+    "deploy": "npm run build --prefix client && npm run start --prefix server",
     "watch": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "repository": {
